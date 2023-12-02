@@ -20,7 +20,7 @@ public:
             currWord = s.substr(0, i + 1);
             if (word_set.find(currWord) == word_set.end())
                 continue;
-            dp[s] = checkWordBreak(word_set, s.substr(i + 1, s.size()), dp);
+            dp[s] = checkWordBreak(word_set, s.substr(i + 1), dp);
             if (dp[s])
                 return true;
         }
