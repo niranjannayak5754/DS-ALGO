@@ -1,6 +1,11 @@
 
 /*
-    ********** SET MATRIX ZEROES [Medium] ********************88
+    ********** SET MATRIX ZEROES [Medium] ********************
+
+    Note ** traverse from last -> first so that non-zero element 
+    which were latter set to zero won't affect while setting zeroes for columns
+    i.e if we start from first, non-zeroes of 0th col will be set to 0 already 
+    and arr[0][j] will affect while setting zeroes
 */
 
 #include<bits/stdc++.h>
